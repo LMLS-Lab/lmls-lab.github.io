@@ -13,7 +13,7 @@ description: >-
 university: "Inha University"
 department: "Department of Computer Science and Engineering"  # TODO: verify exact department name
 email: "sunwool@inha.ac.kr"
-address: "Inha University, High-tech Bld. 1410-ho, 100 Inha-ro, Michuhol-gu, Incheon, South Korea"  # TODO: update with exact building/room
+address: "Inha University, High-tech Bld. 1207-ho, 100 Inha-ro, Michuhol-gu, Incheon, South Korea"  # TODO: update with exact building/room
 
 # Base URL and site URL — IMPORTANT for GitHub Pages
 # If deploying to https://<username>.github.io/<repo>/, set baseurl: "/<repo>"
