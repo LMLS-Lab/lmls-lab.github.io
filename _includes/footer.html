@@ -1,0 +1,27 @@
+<footer class="site-footer">
+  <div class="wrap site-footer__inner">
+    <div class="site-footer__col">
+      <strong>{{ site.title }}</strong>
+      <p>{{ site.department }}<br>{{ site.university }}</p>
+      <p>{{ site.address }}</p>
+    </div>
+    <div class="site-footer__col">
+      <strong>Contact</strong>
+      <p><a href="mailto:{{ site.email }}">{{ site.email }}</a></p>
+      <p>
+        {% if site.github_username %}<a href="https://github.com/{{ site.github_username }}" target="_blank" rel="noopener">GitHub</a>{% endif %}
+        {% if site.google_scholar_url and site.google_scholar_url != "" %} · <a href="{{ site.google_scholar_url }}" target="_blank" rel="noopener">Google Scholar</a>{% endif %}
+        {% if site.twitter_username and site.twitter_username != "" %} · <a href="https://twitter.com/{{ site.twitter_username }}" target="_blank" rel="noopener">Twitter</a>{% endif %}
+      </p>
+    </div>
+    <div class="site-footer__col site-footer__col--links">
+      <strong>Links</strong>
+      <p>
+        {% for link in site.nav_links %}<a href="{{ link.url | relative_url }}">{{ link.title }}</a>{% unless forloop.last %} · {% endunless %}{% endfor %}
+      </p>
+    </div>
+  </div>
+  <div class="wrap site-footer__bottom">
+    <span>&copy; {{ site.time | date: '%Y' }} {{ site.title }}. Built with Jekyll, hosted on GitHub Pages.</span>
+  </div>
+</footer>

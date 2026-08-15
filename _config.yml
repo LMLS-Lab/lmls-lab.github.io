@@ -1,0 +1,93 @@
+# ------------------------------------------------------------------
+# Large-scale Machine Learning Systems Lab. — Jekyll site configuration
+# ------------------------------------------------------------------
+
+title: "Large-scale Machine Learning Systems Lab."
+short_title: "LMLS-Lab"
+description: >-
+  The Large-Scale Machine Learning Systems Lab. studies critical problems in optimization-based machine learning and deep learning.
+  We currently pursue the following three research directions: 1) Efficient numerical optimizers for large-scale neural network training,
+  2) System-efficient Federated Learning on heterogeneous systems, and 3) Applied Machine Learning for Physics.
+
+# TODO: update with your actual info
+university: "Inha University"
+department: "Department of Computer Science and Engineering"  # TODO: verify exact department name
+email: "sunwool@inha.ac.kr"
+address: "Inha University, High-tech Bld. 1410-ho, 100 Inha-ro, Michuhol-gu, Incheon, South Korea"  # TODO: update with exact building/room
+
+# Base URL and site URL — IMPORTANT for GitHub Pages
+# If deploying to https://<username>.github.io/<repo>/, set baseurl: "/<repo>"
+# If deploying to https://<username>.github.io/ (user/org page), set baseurl: ""
+baseurl: ""   # swblaster.github.io is a user page repo, so it's served at the root
+url: "https://swblaster.github.io"
+
+# Social / external links
+github_username: "swblaster"   # TODO: confirm this is correct
+google_scholar_url: "https://scholar.google.co.kr/citations?user=WA9KNNcAAAAJ"                    # TODO (optional)
+# twitter_username: ""                      # TODO (optional)
+
+# Navigation (order shown in the top nav bar)
+nav_links:
+  - title: "Home"
+    url: "/"
+  - title: "People"
+    url: "/people/"
+  - title: "Publications"
+    url: "/publications/"
+  - title: "News"
+    url: "/news/"
+  - title: "Contact"
+    url: "/contact/"
+
+# Build settings
+markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+permalink: pretty
+timezone: Asia/Seoul
+
+collections:
+  people:
+    output: true
+    permalink: /people/:path/
+  publications:
+    output: true
+    permalink: /publications/:path/
+  news:
+    output: true
+    permalink: /news/:path/
+
+defaults:
+  - scope:
+      path: ""
+      type: "people"
+    values:
+      layout: "person"
+  - scope:
+      path: ""
+      type: "publications"
+    values:
+      layout: "publication"
+  - scope:
+      path: ""
+      type: "news"
+    values:
+      layout: "news_item"
+  - scope:
+      path: ""
+    values:
+      layout: "default"
+
+# Only plugins supported natively by GitHub Pages (no GitHub Actions needed)
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - vendor
+  - node_modules

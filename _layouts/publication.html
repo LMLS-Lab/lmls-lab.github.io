@@ -1,0 +1,27 @@
+---
+layout: default
+---
+<article class="section publication">
+  <div class="wrap">
+    <p class="breadcrumb"><a href="{{ '/publications/' | relative_url }}">← Publications</a></p>
+    <h1>{{ page.title }}</h1>
+    <p class="publication__meta">{{ page.authors }}</p>
+    <p class="publication__venue">{{ page.venue }}{% if page.year %}, {{ page.year }}{% endif %}</p>
+
+    <ul class="publication__links">
+      {% if page.pdf %}<li><a class="btn btn--small" href="{{ page.pdf }}" target="_blank" rel="noopener">PDF</a></li>{% endif %}
+      {% if page.code %}<li><a class="btn btn--small" href="{{ page.code }}" target="_blank" rel="noopener">Code</a></li>{% endif %}
+      {% if page.arxiv %}<li><a class="btn btn--small" href="{{ page.arxiv }}" target="_blank" rel="noopener">arXiv</a></li>{% endif %}
+      {% if page.doi %}<li><a class="btn btn--small" href="https://doi.org/{{ page.doi }}" target="_blank" rel="noopener">DOI</a></li>{% endif %}
+    </ul>
+
+    <div class="prose">
+      {{ content }}
+    </div>
+
+    {% if page.bibtex %}
+    <h2>BibTeX</h2>
+    <pre class="bibtex"><code>{{ page.bibtex }}</code></pre>
+    {% endif %}
+  </div>
+</article>

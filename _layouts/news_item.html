@@ -1,0 +1,13 @@
+---
+layout: default
+---
+<article class="section news-item">
+  <div class="wrap">
+    <p class="breadcrumb"><a href="{{ '/news/' | relative_url }}">← News</a></p>
+    <time class="news-item__date" datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%B %-d, %Y" }}</time>
+    <h1>{{ page.title }}</h1>
+    <div class="prose">
+      {{ content }}
+    </div>
+  </div>
+</article>

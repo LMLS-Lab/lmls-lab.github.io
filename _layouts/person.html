@@ -1,0 +1,31 @@
+---
+layout: default
+---
+<article class="section person">
+  <div class="wrap person__inner">
+    <div class="person__photo">
+      {% if page.photo %}
+        <img src="{{ page.photo | relative_url }}" alt="Photo of {{ page.name }}">
+      {% else %}
+        <div class="person__photo-placeholder" aria-hidden="true">{{ page.name | slice: 0, 1 }}</div>
+      {% endif %}
+    </div>
+    <div class="person__info">
+      <p class="breadcrumb"><a href="{{ '/people/' | relative_url }}">← People</a></p>
+      <h1>{{ page.name }}</h1>
+      <p class="person__role">{{ page.role }}</p>
+
+      <ul class="person__links">
+        {% if page.email %}<li><a href="mailto:{{ page.email }}">Email</a></li>{% endif %}
+        {% if page.homepage %}<li><a href="{{ page.homepage }}" target="_blank" rel="noopener">Homepage</a></li>{% endif %}
+        {% if page.google_scholar %}<li><a href="{{ page.google_scholar }}" target="_blank" rel="noopener">Google Scholar</a></li>{% endif %}
+        {% if page.github %}<li><a href="https://github.com/{{ page.github }}" target="_blank" rel="noopener">GitHub</a></li>{% endif %}
+        {% if page.linkedin %}<li><a href="{{ page.linkedin }}" target="_blank" rel="noopener">LinkedIn</a></li>{% endif %}
+      </ul>
+
+      <div class="prose">
+        {{ content }}
+      </div>
+    </div>
+  </div>
+</article>
