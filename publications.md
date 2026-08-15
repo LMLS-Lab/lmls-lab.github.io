@@ -20,7 +20,9 @@ permalink: /publications/
           <ul class="publication-list">
             {% for pub in year_pubs %}
             <li class="publication-list__item">
-              <span class="publication-list__title"><a href="{{ pub.url | relative_url }}">{{ pub.title }}</a></span>
+              <span class="publication-list__title">
+                <a href="{{ pub.url | relative_url }}">{{ pub.title }}</a>{% if pub.note %} <span class="pub-note">{{ pub.note }}</span>{% endif %}
+              </span>
               <span class="publication-list__meta">{{ pub.authors }} — {{ pub.venue }}</span>
             </li>
             {% endfor %}
