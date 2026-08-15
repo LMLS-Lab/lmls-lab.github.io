@@ -76,8 +76,13 @@ layout: default
       <a class="section__more" href="{{ '/publications/' | relative_url }}">All publications →</a>
     </div>
     <ul class="pub-list">
-      {% assign recent_pubs = site.publications | sort: 'year' | reverse | slice: 0, 5 %}
-      {% for pub in recent_pubs %}
+      {% assign featured_pubs = site.publications | where: "featured", true | sort: "year" | reverse %}
+      {% if featured_pubs.size > 0 %}
+        {% assign selected_pubs = featured_pubs %}
+      {% else %}
+        {% assign selected_pubs = site.publications | sort: "year" | reverse | slice: 0, 5 %}
+      {% endif %}
+      {% for pub in selected_pubs %}
       <li class="pub-list__item">
         <span class="pub-list__title">{{ pub.title }}</span>
         <span class="pub-list__meta">{{ pub.authors }} — {{ pub.venue }}, {{ pub.year }}</span>

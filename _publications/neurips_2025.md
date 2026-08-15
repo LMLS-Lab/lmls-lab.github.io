@@ -2,6 +2,7 @@
 # TODO: Template entry. Duplicate this file per publication (e.g. lee2026fedopt.md),
 # fill in the fields, then delete this example (or keep `published: false`).
 published: true
+featured: true
 title: "Layer-wise Update Aggregation with Recycling for Communication-Efficient Federated Learning"
 authors: "Jisoo Kim, Sungmin Kang, Sunwoo Lee"
 note: ""
