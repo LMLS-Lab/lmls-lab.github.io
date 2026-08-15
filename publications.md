@@ -9,23 +9,37 @@ permalink: /publications/
       <h1>Publications</h1>
     </div>
 
-    {% assign pubs = site.publications | sort: "year" | reverse %}
+    {% comment %} Grouped by the "type" front-matter field (conference | journal | preprint | workshop). {% endcomment %}
+    {% assign types = "conference|journal|workshop|preprint" | split: "|" %}
+    {% assign type_labels = "Conference Papers|Journal Articles|Workshop Papers|Preprints" | split: "|" %}
 
-    {% if pubs.size > 0 %}
-      <ul class="publication-list">
-        {% for pub in pubs %}
-        {% assign authors_html = pub.authors | replace: "Sunwoo Lee", "<strong>Sunwoo Lee</strong>" %}
-        <li class="publication-list__item">
-          <div class="publication-list__body">
-            <span class="publication-list__title">
-              <a href="{{ pub.url | relative_url }}">{{ pub.title }}</a>{% if pub.note %} <span class="pub-note">{{ pub.note }}</span>{% endif %}
-            </span>
-            <span class="publication-list__meta">{{ authors_html }} — <strong class="publication-list__venue">{{ pub.venue }}</strong></span>
-          </div>
-          <span class="publication-list__year">{{ pub.year }}</span>
-        </li>
-        {% endfor %}
-      </ul>
+    {% assign has_any = false %}
+    {% for pub in site.publications %}{% assign has_any = true %}{% endfor %}
+
+    {% if has_any %}
+      {% for type in types %}
+        {% assign label = type_labels[forloop.index0] %}
+        {% assign pubs = site.publications | where: "type", type | sort: "year" | reverse %}
+        {% if pubs.size > 0 %}
+        <div class="people-group">
+          <h2>{{ label }}</h2>
+          <ul class="publication-list">
+            {% for pub in pubs %}
+            {% assign authors_html = pub.authors | replace: "Sunwoo Lee", "<strong>Sunwoo Lee</strong>" %}
+            <li class="publication-list__item">
+              <div class="publication-list__body">
+                <span class="publication-list__title">
+                  <a href="{{ pub.url | relative_url }}">{{ pub.title }}</a>{% if pub.note %} <span class="pub-note">{{ pub.note }}</span>{% endif %}
+                </span>
+                <span class="publication-list__meta">{{ authors_html }} — <strong class="publication-list__venue">{{ pub.venue }}</strong></span>
+              </div>
+              <span class="publication-list__year">{{ pub.year }}</span>
+            </li>
+            {% endfor %}
+          </ul>
+        </div>
+        {% endif %}
+      {% endfor %}
     {% else %}
       <p class="prose">No publications listed yet.</p>
     {% endif %}
