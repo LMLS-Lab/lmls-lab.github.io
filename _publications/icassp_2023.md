@@ -7,8 +7,6 @@ authors: "Tuo Zhang, Tiantian Feng, Samiul Alam, Sunwoo Lee, Mi Zhang, Shrikanth
 venue: "ICASSP"
 year: 2023
 type: "conference"          # conference | journal | preprint | workshop
-pdf: "https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=10096500"                     # link to PDF, optional
-code: ""                    # link to code repo, optional
 arxiv: "https://arxiv.org/abs/2210.15707"                   # link to arXiv page, optional
 doi: "10.1109/ICASSP49357.2023.10096500"                     # DOI (without the https://doi.org/ prefix), optional
 bibtex: |

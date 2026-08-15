@@ -7,9 +7,6 @@ authors: "Kewei Wang, Sunwoo Lee, Jan Balewski, Alex Sim, Peter Nugent, Ankit Ag
 venue: "CCGrid"
 year: 2022
 type: "conference"          # conference | journal | preprint | workshop
-pdf: ""                     # link to PDF, optional
-code: ""                    # link to code repo, optional
-arxiv: ""                   # link to arXiv page, optional
 doi: "10.1109/CCGrid54584.2022.00050"                     # DOI (without the https://doi.org/ prefix), optional
 bibtex: |
   @inproceedings{wang2022using,
