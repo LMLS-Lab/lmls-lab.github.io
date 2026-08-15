@@ -21,4 +21,4 @@ bibtex: |
     organization={IEEE}
   }
 ---
-This study proposes a multi-resolution data augmentation method which accelerates neural network training on scientific data.
+This study proposes an audio benchmark dataset together with a few challenging and intriguing research problems regarding federated optimization for audio data learning.
