@@ -10,25 +10,22 @@ permalink: /publications/
     </div>
 
     {% assign pubs = site.publications | sort: "year" | reverse %}
-    {% assign years = pubs | map: "year" | uniq | sort | reverse %}
 
     {% if pubs.size > 0 %}
-      {% for year in years %}
-        {% assign year_pubs = pubs | where: "year", year %}
-        <div class="people-group">
-          <h2>{{ year }}</h2>
-          <ul class="publication-list">
-            {% for pub in year_pubs %}
-            <li class="publication-list__item">
-              <span class="publication-list__title">
-                <a href="{{ pub.url | relative_url }}">{{ pub.title }}</a>{% if pub.note %} <span class="pub-note">{{ pub.note }}</span>{% endif %}
-              </span>
-              <span class="publication-list__meta">{{ pub.authors }} — {{ pub.venue }}</span>
-            </li>
-            {% endfor %}
-          </ul>
-        </div>
-      {% endfor %}
+      <ul class="publication-list">
+        {% for pub in pubs %}
+        {% assign authors_html = pub.authors | replace: "Sunwoo Lee", "<strong>Sunwoo Lee</strong>" %}
+        <li class="publication-list__item">
+          <div class="publication-list__body">
+            <span class="publication-list__title">
+              <a href="{{ pub.url | relative_url }}">{{ pub.title }}</a>{% if pub.note %} <span class="pub-note">{{ pub.note }}</span>{% endif %}
+            </span>
+            <span class="publication-list__meta">{{ authors_html }} — <strong class="publication-list__venue">{{ pub.venue }}</strong></span>
+          </div>
+          <span class="publication-list__year">{{ pub.year }}</span>
+        </li>
+        {% endfor %}
+      </ul>
     {% else %}
       <p class="prose">No publications listed yet.</p>
     {% endif %}

@@ -363,8 +363,22 @@ img { max-width: 100%; display: block; }
   padding: 16px 0;
   border-bottom: 1px solid var(--color-line);
   display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+}
+.publication-list__body {
+  display: flex;
   flex-direction: column;
   gap: 4px;
+  min-width: 0;
+}
+.publication-list__year {
+  flex-shrink: 0;
+  color: var(--color-ink-soft);
+  font-weight: 600;
+  white-space: nowrap;
+  padding-top: 1px;
 }
 .pub-list__title, .publication-list__title {
   font-weight: 600;
@@ -377,6 +391,16 @@ img { max-width: 100%; display: block; }
 .pub-list__item--empty, .publication-list__item--empty {
   color: var(--color-ink-soft);
   border-bottom: none;
+}
+.pub-list__item--empty, .publication-list__item--empty {
+  color: var(--color-ink-soft);
+  border-bottom: none;
+}
+@media (max-width: 600px) {
+  .pub-list__item, .publication-list__item {
+    flex-direction: column;
+    gap: 2px;
+  }
 }
 .pub-note {
   color: var(--color-note);
