@@ -4,7 +4,7 @@
 published: true
 title: "Ghosted Layers: Unconstrained Activation Alignment for Recovering Layer-pruned LLMs"
 authors: "Vincent-Daniel Yun, Junhyuk Jo, Sai Praneeth Karimireddy, Sunwoo Lee"
-venue: "International Conference on Machine Learning Workshop"
+venue: "ICML Workshop"
 year: 2026
 type: "workshop"          # conference | journal | preprint | workshop
 arxiv: "https://arxiv.org/abs/2605.15491"                     # DOI (without the https://doi.org/ prefix), optional
