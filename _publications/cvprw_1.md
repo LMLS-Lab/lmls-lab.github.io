@@ -8,6 +8,7 @@ venue: "Conference on Computer Vision and Pattern Recognition Workshop"
 year: 2023
 type: "workshop"          # conference | journal | preprint | workshop
 doi: "10.1109/CVPRW59228.2023.00535"                     # DOI (without the https://doi.org/ prefix), optional
+bibtex: |
   @inproceedings{zhang2023timelyfl,
     title={Timelyfl: Heterogeneity-aware asynchronous federated learning with adaptive partial training},
     author={Zhang, Tuo and Gao, Lei and Lee, Sunwoo and Zhang, Mi and Avestimehr, Salman},
