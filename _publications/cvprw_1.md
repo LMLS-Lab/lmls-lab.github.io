@@ -4,7 +4,7 @@
 published: true
 title: "TimelyFL: Heterogeneity-aware Asynchronous Federated Learning with Adaptive Partial Training"
 authors: "Tuo Zhang, Lei Gao, Sunwoo Lee, Mi Zhang, Salman Avestimehr"
-venue: "Conference on Computer Vision and Pattern Recognition Workshop"
+venue: "CVPR Workshop"
 year: 2023
 type: "workshop"          # conference | journal | preprint | workshop
 doi: "10.1109/CVPRW59228.2023.00535"                     # DOI (without the https://doi.org/ prefix), optional
