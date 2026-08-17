@@ -19,7 +19,7 @@ His research interests include numerical optimization-based machine learning, fe
 
 **Education**
 
- - Ph..D. in Computer Engineering at Northwestern University (Advisor: Alok Choudhary and Wei-keng Liao), USA, 2015 -- 2020
+ - Ph.D. in Computer Engineering at Northwestern University, USA, 2015 -- 2020
 
  - B.S. and M.S. in Computer Egnineering at Hanyang University, S. Korea, 2003 -- 2009
 
