@@ -24,6 +24,7 @@ permalink: /publications/
         <div class="people-group">
           <h2>{{ label }}</h2>
           <ul class="publication-list">
+            {% assign prev_year = "" %}
             {% for pub in pubs %}
             {% assign authors_html = pub.authors | replace: "Sunwoo Lee", "<strong>Sunwoo Lee</strong>" %}
             <li class="publication-list__item">
@@ -33,7 +34,12 @@ permalink: /publications/
                 </span>
                 <span class="publication-list__meta">{{ authors_html }} — <strong class="publication-list__venue">{{ pub.venue }}</strong></span>
               </div>
+              {% if pub.year != prev_year %}
               <span class="publication-list__year">{{ pub.year }}</span>
+              {% assign prev_year = pub.year %}
+              {% else %}
+              <span class="publication-list__year"></span>
+              {% endif %}
             </li>
             {% endfor %}
           </ul>
