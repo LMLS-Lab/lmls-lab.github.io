@@ -5,8 +5,7 @@
 title: "Large-scale Machine Learning Systems Lab."
 short_title: "LMLS-Lab"
 description: >-
-  The **Large-scale Machine Learning Systems Lab.** (LMLS Lab) is a research group in the
-  {{ site.department }} at {{ site.university }}. 
+  The Large-scale Machine Learning Systems Lab. (LMLS Lab) is a research group in the department of Computer Science and Engineering at Inha University, South Korea.
 
 # TODO: update with your actual info
 university: "Inha University"
