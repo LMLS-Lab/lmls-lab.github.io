@@ -5,9 +5,8 @@
 title: "Large-scale Machine Learning Systems Lab."
 short_title: "LMLS-Lab"
 description: >-
-  The Large-Scale Machine Learning Systems Lab. studies critical problems in optimization-based machine learning and deep learning.
-  We currently pursue the following three research directions: 1) Efficient numerical optimizers for large-scale neural network training,
-  2) System-efficient Federated Learning on heterogeneous systems, and 3) Applied Machine Learning for Physics.
+  The **Large-scale Machine Learning Systems Lab.** (LMLS Lab) is a research group in the
+  {{ site.department }} at {{ site.university }}. 
 
 # TODO: update with your actual info
 university: "Inha University"
