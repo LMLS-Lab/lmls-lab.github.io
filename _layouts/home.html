@@ -93,3 +93,23 @@ layout: default
     </ul>
   </div>
 </section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="section__head">
+      <h2>On-going Projects</h2>
+    </div>
+    <ul class="pub-list">
+      {% assign today = 'now' | date: "%Y-%m" %}
+      {% assign ongoing_projects = site.projects | where_exp: "p", "p.end == nil or p.end == '' or p.end >= today" | sort: "start" | reverse %}
+      {% for proj in ongoing_projects %}
+      <li class="pub-list__item">
+        <span class="pub-list__title">{{ proj.title }}</span>
+        <span class="pub-list__meta">{{ proj.agency }} — {{ proj.role }}, {{ proj.start }}{% if proj.end %}–{{ proj.end }}{% else %}–Present{% endif %}</span>
+      </li>
+      {% else %}
+      <li class="pub-list__item pub-list__item--empty">No ongoing projects listed yet.</li>
+      {% endfor %}
+    </ul>
+  </div>
+</section>
