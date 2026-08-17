@@ -100,16 +100,21 @@ layout: default
       <h2>On-going Projects</h2>
     </div>
     <ul class="pub-list">
-      {% assign today = 'now' | date: "%Y-%m" %}
-      {% assign ongoing_projects = site.projects | where_exp: "p", "p.end == nil or p.end == '' or p.end >= today" | sort: "start" | reverse %}
-      {% for proj in ongoing_projects %}
-      <li class="pub-list__item">
-        <span class="pub-list__title">{{ proj.title }}</span>
-        <span class="pub-list__meta">{{ proj.agency }} — {{ proj.role }}, {{ proj.start }}{% if proj.end %}–{{ proj.end }}{% else %}–Present{% endif %}</span>
-      </li>
-      {% else %}
-      <li class="pub-list__item pub-list__item--empty">No ongoing projects listed yet.</li>
+      {% assign today = 'now' | date: '%Y-%m' %}
+      {% assign all_projects = site.projects | sort: 'start' | reverse %}
+      {% assign has_ongoing = false %}
+      {% for proj in all_projects %}
+        {% if proj.end == nil or proj.end == '' or proj.end >= today %}
+          {% assign has_ongoing = true %}
+          <li class="pub-list__item">
+            <span class="pub-list__title">{{ proj.title }}</span>
+            <span class="pub-list__meta">{{ proj.agency }} — {{ proj.role }}, {{ proj.start }}{% if proj.end %}–{{ proj.end }}{% else %}–Present{% endif %}</span>
+          </li>
+        {% endif %}
       {% endfor %}
+      {% unless has_ongoing %}
+      <li class="pub-list__item pub-list__item--empty">No ongoing projects listed yet.</li>
+      {% endunless %}
     </ul>
   </div>
 </section>
