@@ -26,7 +26,7 @@ permalink: /contact/
         federated learning, or optimization-based machine learning. If you'd like to reach out,
         please email us with a brief note about your background and interests, and include your
         CV/resume.</p><br>
-        <p>우리 연구실은 최적화기반 딥러닝, 연합학습, 멀티에이전트시스템 연구에 관심있는 학생들에게 언제나 열려 있습니다. 스스로 동기부여가 가능한 열성적인 학생들은 CV와 함께 이메일주기 바랍니다. </p>
+        <p>우리 연구실은 최적화 기반 머신러닝, 연합학습, 멀티에이전트시스템 연구에 관심있는 학생들에게 언제나 열려 있습니다. 스스로 동기부여가 가능한 열정적인 학생들은 CV와 함께 이메일 주기 바랍니다. </p>
 
         <!-- TODO: add admissions-cycle-specific notes, application links, or a map/directions here. -->
       </div>
