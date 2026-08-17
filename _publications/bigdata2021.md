@@ -2,21 +2,20 @@
 # TODO: Template entry. Duplicate this file per publication (e.g. lee2026fedopt.md),
 # fill in the fields, then delete this example (or keep `published: false`).
 published: true
-featured: false
-title: "Asynchronous I/O Strategy for Large-scale Deep Learning Applications"
-authors: "Sunwoo Lee, Qiao Kang, Kewei Wang, Jan Balewski, Alex Sim, Ankit Agrawal, Alok Choudhary, Peter Nugent, Kesheng Wu, Wei-keng Liao"
-venue: "HiPC"
+title: "Supporting Data Compression in PnetCDF"
+authors: "Kaiyuan Hou, Qiao Kang, Sunwoo Lee, Ankit Agrawal, Alok Choudhary, Wei-keng Liao"
+venue: "BigData"
 year: 2021
 type: "conference"          # conference | journal | preprint | workshop
-doi: "10.1109/HiPC53243.2021.00046"                     # DOI (without the https://doi.org/ prefix), optional
+doi: "10.1109/BigData52589.2021.9671998"                     # DOI (without the https://doi.org/ prefix), optional
 bibtex: |
-  @inproceedings{lee2021asynchronous,
-    title={Asynchronous I/O strategy for large-scale deep learning applications},
-    author={Lee, Sunwoo and Kang, Qiao and Wang, Kewei and Balewski, Jan and Sim, Alex and Agrawal, Ankit and Choudhary, Alok and Nugent, Peter and Wu, Kesheng and Liao, Wei-keng},
-    booktitle={2021 IEEE 28th International Conference on High Performance Computing, Data, and Analytics (HiPC)},
-    pages={322--331},
+  @inproceedings{hou2021supporting,
+    title={Supporting data compression in PnetCDF},
+    author={Hou, Kaiyuan and Kang, Qiao and Lee, Sunwoo and Agrawal, Ankit and Choudhary, Alok and Liao, Wei-keng},
+    booktitle={2021 IEEE International Conference on Big Data (Big Data)},
+    pages={86--97},
     year={2021},
     organization={IEEE}
   }
 ---
-This paper proposes an asynchronous I/O strategy for large-scale deep learning training, in which a dedicated per-process I/O thread reads many training samples at once and overlaps I/O with computation via double-buffering, and shows on CosmoFlow and Neuron-Inverter that this significantly improves scaling performance without degrading regression accuracy.
+This paper presents a variable compression feature for the Parallel NetCDF library that adopts HDF5-style chunking while enabling I/O aggregation across multiple requests, and shows through real-world scientific I/O kernels that handling multiple requests at once significantly improves parallel I/O performance on chunked and compressed data.
