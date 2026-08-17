@@ -37,6 +37,8 @@ His research interests include numerical optimization-based machine learning, fe
 
  - Accelerating numerical optimization process for faster and scalable deep learning
 
+ - Agent training for cooperative inference and scalable multi-agent system
+
  - Efficient Sharpness-aware Minimization (SAM) for improving generalization
 
  - Applied machine learning / deep learning for Physics
