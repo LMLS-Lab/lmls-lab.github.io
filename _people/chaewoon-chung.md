@@ -4,7 +4,8 @@ role: "M.S. Candidate"        # TODO: confirm exact title, e.g. "Assistant Profe
 group: "ms"                       # faculty | phd | ms | undergrad | alumni
 order: 4                               # lower = shown first within its group
 email: "kansane68@gmail.com"
-photo: "/assets/images/chaewoon-chung.jpg"                              # TODO: e.g. /assets/images/people/sunwoo-lee.jpg
+google_scholar: "https://scholar.google.co.kr/citations?user=W8l229kAAAAJ"
+photo: "/assets/images/chaewoon-chung.jpg"
 ---
 Will be filled up soon.
 
