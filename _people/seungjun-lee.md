@@ -14,7 +14,7 @@ photo: "/assets/images/seungjun-lee.jpg"                              # TODO: e.
 
 Seungjun Lee is an M.S. student in the Department of **Electrical and Computer Engineering at Inha University**.
 He received a B.S. from **Inha University** in 2026.
-His research interests include numerical optimization-based machine learning and federated learning, with a focus on efficient reasoning in large language models.
+His research interests include federated learning and efficient machine learning, with a focus on improving reasoning efficiency in large language models.
 
 **Education**
 
