@@ -10,8 +10,6 @@ linkedin: "www.linkedin.com/in/민성-전-9ba5563b6"         # TODO: LinkedIn UR
 photo: "/assets/images/minsung-jeon.jpg"                              # TODO: e.g. /assets/images/people/sunwoo-lee.jpg
 
 ---
-Will be filled up soon.
 
 <!-- TODO: replace with an actual bio (education, prior positions, interests). -->
-**Bio**
 Minseong Jeon is an undergraduate intern interested in machine learning systems, federated learning, and efficient large-scale model training.
