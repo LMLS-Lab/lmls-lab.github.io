@@ -5,6 +5,7 @@ group: "undergrad"                       # faculty | phd | ms | undergrad | alum
 order: 7                              # lower = shown first within its group
 email: "baby021211@gmail.com"
 photo: "/assets/images/minsung-jeon.jpg"                              # TODO: e.g. /assets/images/people/sunwoo-lee.jpg
+google_scholar:"https://scholar.google.com/citations?hl=ko&user=C7KVwzsAAAAJ"
 ---
 Will be filled up soon.
 
