@@ -5,6 +5,7 @@ group: "ms"                       # faculty | phd | ms | undergrad | alumni
 order: 4                               # lower = shown first within its group
 email: "kansane68@gmail.com"
 google_scholar: "https://scholar.google.co.kr/citations?user=W8l229kAAAAJ"
+github: "https://github.com/Kansane68"
 photo: "/assets/images/chaewoon-chung.jpg"
 ---
 **Short Bio**
