@@ -22,10 +22,10 @@ His research interests include numerical optimization, federated learning with a
 
 **Research Interests**
 
- - Numerical Optimization
+ - Efficient Sharpness-aware Minimization (SAM) for improving generalization
 
- - Federated Learning
+ - Federated Learning with SAM for improving generalization
 
- - Quantization
+ - Low-rank Pruning-aware training
 
 <!-- TODO: replace with an actual bio (education, prior positions, interests). -->
