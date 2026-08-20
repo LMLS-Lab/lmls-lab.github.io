@@ -10,6 +10,14 @@ linkedin: "www.linkedin.com/in/민성-전-9ba5563b6"         # TODO: LinkedIn UR
 photo: "/assets/images/minsung-jeon.jpg"                              # TODO: e.g. /assets/images/people/sunwoo-lee.jpg
 
 ---
+**Short Bio**
 
-<!-- TODO: replace with an actual bio (education, prior positions, interests). -->
-Minseong Jeon is an undergraduate intern interested in machine learning systems, federated learning, and efficient large-scale model training.
+Minseong Jeon is an undergraduate intern in the Large-scale Machine Learning Systems Lab, Departmet of **Computer Engineering** at **Inha University**. He is interested in machine learning systems, federated learning, and efficient large-scale model training. 
+
+**Education**
+
+- B.S. in Computer Engineering at Inha University, S. Korea, 2021 -- Present
+
+**Research Interests**
+
+- federated learning
