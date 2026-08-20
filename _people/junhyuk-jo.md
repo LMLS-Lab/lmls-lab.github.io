@@ -11,7 +11,7 @@ photo: "/assets/images/junhyuk-jo.jpg"                              # TODO: e.g.
 
 Junhyuk Jo is an Ph.D. student in the Department of **Electrical and Computer Engineering at Inha University**.
 He received a B.S. and M.S. from **Inha University** in 2024 and 2026.
-His research interests include numerical optimizations, federated learning and quantization.
+His research interests include numerical optimization, federated learning with a focus on improving the efficiency and generalization of neural networks.
 
 **Education**
  - Ph.D. in Electrical and Computer Engineering at Inha University, S. Korea, 2026 -- present
