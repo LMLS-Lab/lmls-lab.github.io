@@ -1,6 +1,6 @@
 ---
 name: "Vincent-Daniel Yun"
-role: "M.S. Candidate"        # TODO: confirm exact title, e.g. "Assistant Professor"
+role: "M.S. Candidate at University of Southern California"        # TODO: confirm exact title, e.g. "Assistant Professor"
 group: "external"                       # faculty | phd | ms | undergrad | alumni
 order: 2                              # lower = shown first within its group
 email: "juyoung.yun@usc.edu"

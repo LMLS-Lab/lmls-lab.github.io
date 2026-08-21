@@ -1,6 +1,6 @@
 ---
 name: "Sungmin Kang"
-role: "Ph.D. Candidate"        # TODO: confirm exact title, e.g. "Assistant Professor"
+role: "Ph.D. Candidate at Texas A&M University"        # TODO: confirm exact title, e.g. "Assistant Professor"
 group: "external"                       # faculty | phd | ms | undergrad | alumni
 order: 1                              # lower = shown first within its group
 email: "sungmin.kang@tamu.edu"
