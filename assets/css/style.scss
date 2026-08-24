@@ -14,6 +14,7 @@
   --color-brand: #5c7cfa;
   --color-brand-dark: #7c96ff;
   --color-brand-soft: #1a2340;
+  --color-year: #9db4f0;
   --color-note: #f2994a;
   --radius: 10px;
   --max-width: 1100px;
@@ -375,7 +376,7 @@ img { max-width: 100%; display: block; }
 }
 .publication-list__year {
   flex-shrink: 0;
-  color: var(--color-ink-soft);
+  color: var(--color-year);
   font-weight: 600;
   white-space: nowrap;
   padding-top: 1px;
