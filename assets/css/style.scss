@@ -384,6 +384,9 @@ img { max-width: 100%; display: block; }
 .pub-list__title, .publication-list__title {
   font-weight: 600;
 }
+.publication-list__venue {
+  color: var(--color-year);
+}
 .pub-list__title a, .publication-list__title a { color: var(--color-ink); }
 .pub-list__meta, .publication-list__meta {
   font-size: 0.9rem;
