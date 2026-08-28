@@ -5,8 +5,6 @@ group: "undergrad"                       # faculty | phd | ms | undergrad | alum
 order: 6                              # lower = shown first within its group
 email: "river13280@naver.com"
 google_scholar: "https://scholar.google.com/citations?user=LHG906sAAAAJ"
-github: ""
-linkedin: ""
 photo: "/assets/images/garam-mo.jpg"                              # TODO: e.g. /assets/images/people/sunwoo-lee.jpg
 ---
 **Short Bio**
