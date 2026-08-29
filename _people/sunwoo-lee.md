@@ -1,6 +1,6 @@
 ---
 name: "Sunwoo Lee"
-role: "Assistant Professor"        # TODO: confirm exact title, e.g. "Assistant Professor"
+role: "Associate Professor"        # TODO: confirm exact title, e.g. "Assistant Professor"
 group: "faculty"                       # faculty | phd | ms | undergrad | alumni
 order: 1                               # lower = shown first within its group
 email: "sunwool@inha.ac.kr"
@@ -11,7 +11,7 @@ photo: "/assets/images/sunwoo-lee.jpg"                              # TODO: e.g.
 ---
 **Short Bio**
 
-Sunwoo Lee is an Assistant Professor in the Department of **Computer Science and Engineering** at **Inha University**, where he leads the Large-scale Machine Learning Systems Lab.
+Sunwoo Lee is an Associate Professor in the Department of **Computer Science and Engineering** at **Inha University**, where he leads the Large-scale Machine Learning Systems Lab.
 He received his B.S. and M.S. from **Hanyang University** and his Ph.D. from **Northwestern University**, followed by a postdoctoral appointment at the **University of Southern California**.
 Prior to his doctoral studies, he worked at the Memory Solutions Lab, **Samsung Electronics**.
 His research interests include numerical optimization-based machine learning, federated learning, and systems-efficient machine learning, with a focus on making large-scale model training more efficient across heterogeneous computing environments.
