@@ -5,7 +5,7 @@ published: true
 title: "Evaluation of K-Means Data Clustering Algorithm on Intel Xeon Phi"
 authors: "Sunwoo Lee, Wei-keng Liao, Ankit Agrawal, Nikos Hardavellas, Alok Choudhary"
 venue: "BigData"
-year: 2019
+year: 2016
 type: "conference"          # conference | journal | preprint | workshop
 doi: "10.1109/BigData.2016.7840856"                     # DOI (without the https://doi.org/ prefix), optional
 bibtex: |
