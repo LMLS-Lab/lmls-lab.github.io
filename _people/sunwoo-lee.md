@@ -34,6 +34,13 @@ photo: "/assets/images/sunwoo-lee.jpg"                              # TODO: e.g.
 .cv-plain li {
   margin-bottom: 8px;
 }
+.cv-bullets {
+  margin: 8px 0 22px;
+  padding-left: 20px;
+}
+.cv-bullets li {
+  margin-bottom: 8px;
+}
 .cv-subhead {
   opacity: 0.6;
   margin: 4px 0 6px;
@@ -69,7 +76,7 @@ His research interests include numerical optimization-based machine learning, fe
 
 **Research Interests**
 
-<ul class="cv-plain">
+<ul class="cv-bullets">
   <li>System-efficient distributed / federated learning on heterogeneous edge devices</li>
   <li>Accelerating numerical optimization process for faster and scalable deep learning</li>
   <li>Agent training for cooperative inference and scalable multi-agent systems</li>
