@@ -13,59 +13,30 @@ photo: "/assets/images/sunwoo-lee.jpg"                              # TODO: e.g.
 <style>
 .cv-grid {
   display: grid;
-  grid-template-columns: 130px 1fr;
-  row-gap: 10px;
+  grid-template-columns: 100px 1fr;
+  row-gap: 8px;
   column-gap: 20px;
-  margin: 10px 0 22px;
+  margin: 8px 0 22px;
 }
 .cv-grid dt {
-  font-weight: 600;
-  opacity: 0.55;
+  opacity: 0.5;
   white-space: nowrap;
   margin: 0;
 }
 .cv-grid dd {
   margin: 0;
 }
-.cv-list {
+.cv-plain {
   list-style: none;
-  margin: 10px 0 22px;
+  margin: 8px 0 22px;
   padding: 0;
 }
-.cv-list li {
-  border-left: 3px solid currentColor;
-  opacity: 0.9;
-  padding: 2px 0 2px 14px;
-  margin-bottom: 12px;
+.cv-plain li {
+  margin-bottom: 8px;
 }
 .cv-subhead {
-  font-weight: 600;
-  opacity: 0.75;
-  margin: 4px 0 8px;
-}
-.cv-table {
-  border-collapse: collapse;
-  width: 100%;
-  margin: 6px 0 20px;
-}
-.cv-table td {
-  padding: 6px 16px 6px 0;
-  border-bottom: 1px solid rgba(128,128,128,0.25);
-  vertical-align: top;
-}
-.cv-table td:first-child {
-  /* Conference name color */
-  color: #9db4f0;
-  white-space: nowrap;
-  opacity: 1;
-  font-weight: 500;
-}
-.cv-table--plain td:first-child {
-  /* Journal name color */
-  color: #9db4f0;
-  white-space: normal;
-  opacity: 1;
-  font-weight: 400;
+  opacity: 0.6;
+  margin: 4px 0 6px;
 }
 </style>
 
@@ -98,7 +69,7 @@ His research interests include numerical optimization-based machine learning, fe
 
 **Research Interests**
 
-<ul class="cv-list">
+<ul class="cv-plain">
   <li>System-efficient distributed / federated learning on heterogeneous edge devices</li>
   <li>Accelerating numerical optimization process for faster and scalable deep learning</li>
   <li>Agent training for cooperative inference and scalable multi-agent systems</li>
@@ -110,28 +81,28 @@ His research interests include numerical optimization-based machine learning, fe
 
 <div class="cv-subhead">Conference Reviewer</div>
 
-<table class="cv-table">
-  <tr><td>NeurIPS</td><td>2022 – 2026</td></tr>
-  <tr><td>ICLR</td><td>2024 – 2027</td></tr>
-  <tr><td>ICML</td><td>2022 – 2026</td></tr>
-  <tr><td>AAAI</td><td>2022 – 2027</td></tr>
-  <tr><td>AISTATS</td><td>2021 – 2022</td></tr>
-  <tr><td>KDD</td><td>2023 – 2026 (Outstanding Reviewer, KDD 2024)</td></tr>
-  <tr><td>CVPR</td><td>2025 – 2026</td></tr>
-  <tr><td>ARR (ACL, EMNLP)</td><td>2026</td></tr>
-</table>
+<dl class="cv-grid">
+  <dt>2022–2026</dt><dd>NeurIPS</dd>
+  <dt>2024–2027</dt><dd>ICLR</dd>
+  <dt>2022–2026</dt><dd>ICML</dd>
+  <dt>2022–2027</dt><dd>AAAI</dd>
+  <dt>2021–2022</dt><dd>AISTATS</dd>
+  <dt>2023–2026</dt><dd>KDD (Outstanding Reviewer, KDD 2024)</dd>
+  <dt>2025–2026</dt><dd>CVPR</dd>
+  <dt>2026</dt><dd>ARR (ACL, EMNLP)</dd>
+</dl>
 
 <div class="cv-subhead">Journal Reviewer</div>
 
-<table class="cv-table cv-table--plain">
-  <tr><td>IEEE Transactions on Mobile Computing</td></tr>
-  <tr><td>IEEE Transactions on Parallel and Distributed Systems</td></tr>
-  <tr><td>IEEE Cluster</td></tr>
-  <tr><td>ACM Transactions on Intelligence Systems and Technology</td></tr>
-  <tr><td>Engineering Applications of Artificial Intelligence</td></tr>
-  <tr><td>Neurocomputing</td></tr>
-  <tr><td>Neural Networks</td></tr>
-</table>
+<ul class="cv-plain">
+  <li>IEEE Transactions on Mobile Computing</li>
+  <li>IEEE Transactions on Parallel and Distributed Systems</li>
+  <li>IEEE Cluster</li>
+  <li>ACM Transactions on Intelligence Systems and Technology</li>
+  <li>Engineering Applications of Artificial Intelligence</li>
+  <li>Neurocomputing</li>
+  <li>Neural Networks</li>
+</ul>
 
 <!-- TODO: replace with an actual bio (education, prior positions, interests). -->
 
