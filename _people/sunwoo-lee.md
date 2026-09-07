@@ -9,6 +9,66 @@ github: ""                             # TODO: GitHub username, optional
 linkedin: "https://www.linkedin.com/in/sunwoo-lee-90a7308a/?locale=en"                           # TODO: LinkedIn URL, optional
 photo: "/assets/images/sunwoo-lee.jpg"                              # TODO: e.g. /assets/images/people/sunwoo-lee.jpg
 ---
+
+<style>
+.cv-grid {
+  display: grid;
+  grid-template-columns: 130px 1fr;
+  row-gap: 10px;
+  column-gap: 20px;
+  margin: 10px 0 22px;
+}
+.cv-grid dt {
+  font-weight: 600;
+  opacity: 0.55;
+  white-space: nowrap;
+  margin: 0;
+}
+.cv-grid dd {
+  margin: 0;
+}
+.cv-list {
+  list-style: none;
+  margin: 10px 0 22px;
+  padding: 0;
+}
+.cv-list li {
+  border-left: 3px solid currentColor;
+  opacity: 0.9;
+  padding: 2px 0 2px 14px;
+  margin-bottom: 12px;
+}
+.cv-subhead {
+  font-weight: 600;
+  opacity: 0.75;
+  margin: 4px 0 8px;
+}
+.cv-table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 6px 0 20px;
+}
+.cv-table td {
+  padding: 6px 16px 6px 0;
+  border-bottom: 1px solid rgba(128,128,128,0.25);
+  vertical-align: top;
+}
+.cv-table td:first-child {
+  /* Conference name color */
+  color: #9db4f0;
+  white-space: nowrap;
+  opacity: 1;
+  font-weight: 500;
+}
+.cv-table--plain td:first-child {
+  /* Journal name color */
+  color: #9db4f0;
+  white-space: normal;
+  opacity: 1;
+  font-weight: 400;
+}
+</style>
+
 **Short Bio**
 
 Sunwoo Lee is an Associate Professor in the Department of **Computer Science and Engineering** at **Inha University**, where he leads the Large-scale Machine Learning Systems Lab.
@@ -18,63 +78,60 @@ His research interests include numerical optimization-based machine learning, fe
 
 **Education**
 
- - Ph.D. in Computer Engineering at Northwestern University, USA, 2015 -- 2020
-
- - B.S. and M.S. in Computer Egnineering at Hanyang University, S. Korea, 2003 -- 2009
+<dl class="cv-grid">
+  <dt>2015–2020</dt>
+  <dd>Ph.D. in Computer Engineering, <strong>Northwestern University</strong>, USA</dd>
+  <dt>2003–2009</dt>
+  <dd>B.S. and M.S. in Computer Engineering, <strong>Hanyang University</strong>, South Korea</dd>
+</dl>
 
 **Experience**
 
- - Postdoctoral Researcher at University of Southern California, USA, 2020 -- 2022
-
- - System Software Researcher at Memory Solutions Lab, Samsung Electronics, S. Korea, 2013 -- 2015
-
- - System Software Engineer (Alternative Militery Service), HUMAX, S. Korea, 2009 -- 2013
+<dl class="cv-grid">
+  <dt>2020–2022</dt>
+  <dd>Postdoctoral Researcher, <strong>University of Southern California</strong>, USA</dd>
+  <dt>2013–2015</dt>
+  <dd>System Software Researcher, Memory Solutions Lab, <strong>Samsung Electronics</strong>, South Korea</dd>
+  <dt>2009–2013</dt>
+  <dd>System Software Engineer (Alternative Military Service), <strong>HUMAX</strong>, South Korea</dd>
+</dl>
 
 **Research Interests**
 
- - System-efficient distributed / federated learning on heterogeneous edge devices
-
- - Accelerating numerical optimization process for faster and scalable deep learning
-
- - Agent training for cooperative inference and scalable multi-agent system
-
- - Efficient Sharpness-aware Minimization (SAM) for improving generalization
-
- - Applied machine learning / deep learning for Physics
+<ul class="cv-list">
+  <li>System-efficient distributed / federated learning on heterogeneous edge devices</li>
+  <li>Accelerating numerical optimization process for faster and scalable deep learning</li>
+  <li>Agent training for cooperative inference and scalable multi-agent systems</li>
+  <li>Efficient Sharpness-aware Minimization (SAM) for improving generalization</li>
+  <li>Applied machine learning / deep learning for physics</li>
+</ul>
 
 **Services**
 
- - Conference Reviewer
+<div class="cv-subhead">Conference Reviewer</div>
 
-   - NeurIPS 2022 -- 2026
+<table class="cv-table">
+  <tr><td>NeurIPS</td><td>2022 – 2026</td></tr>
+  <tr><td>ICLR</td><td>2024 – 2027</td></tr>
+  <tr><td>ICML</td><td>2022 – 2026</td></tr>
+  <tr><td>AAAI</td><td>2022 – 2027</td></tr>
+  <tr><td>AISTATS</td><td>2021 – 2022</td></tr>
+  <tr><td>KDD</td><td>2023 – 2026 (Outstanding Reviewer, KDD 2024)</td></tr>
+  <tr><td>CVPR</td><td>2025 – 2026</td></tr>
+  <tr><td>ARR (ACL, EMNLP)</td><td>2026</td></tr>
+</table>
 
-   - ICLR 2024 -- 2027
+<div class="cv-subhead">Journal Reviewer</div>
 
-   - ICML 2022 -- 2026
+<table class="cv-table cv-table--plain">
+  <tr><td>IEEE Transactions on Mobile Computing</td></tr>
+  <tr><td>IEEE Transactions on Parallel and Distributed Systems</td></tr>
+  <tr><td>IEEE Cluster</td></tr>
+  <tr><td>ACM Transactions on Intelligence Systems and Technology</td></tr>
+  <tr><td>Engineering Applications of Artificial Intelligence</td></tr>
+  <tr><td>Neurocomputing</td></tr>
+  <tr><td>Neural Networks</td></tr>
+</table>
 
-   - AAAI 2022 -- 2027
-
-   - AISTATS 2021 -- 2022
-
-   - KDD 2023 -- 2026 (Selected as an Outstanding Reviewer an KDD 2024)
-
-   - CVPR 2025 -- 2026
-
-   - ARR (ACL, EMNLP) 2026
-
- - Journal Reviewer
-
-   - IEEE Transactions on Mobile Computing 
-
-   - IEEE Transactions on Parallel and Distributed Systems
-
-   - IEEE Cluster
-
-   - ACM Transactions on Intelligence Systems and Technology
-
-   - Engineering Applications of Artificial Intelligence
-
-   - Neurocomputing
-
-   - Neural Networks
 <!-- TODO: replace with an actual bio (education, prior positions, interests). -->
+
