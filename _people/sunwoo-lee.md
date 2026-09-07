@@ -42,4 +42,39 @@ His research interests include numerical optimization-based machine learning, fe
 
  - Applied machine learning / deep learning for Physics
 
+**Services**
+
+ - Conference Reviewer
+
+   - NeurIPS 2022 -- 2026
+
+   - ICLR 2024 -- 2027
+
+   - ICML 2022 -- 2026
+
+   - AAAI 2022 -- 2027
+
+   - AISTATS 2021 -- 2022
+
+   - KDD 2023 -- 2026 (Selected as an Outstanding Reviewer an KDD 2024)
+
+   - CVPR 2025 -- 2026
+
+   - ARR (ACL, EMNLP) 2026
+
+ - Journal Reviewer
+
+   - IEEE Transactions on Mobile Computing 
+
+   - IEEE Transactions on Parallel and Distributed Systems
+
+   - IEEE Cluster
+
+   - ACM Transactions on Intelligence Systems and Technology
+
+   - Engineering Applications of Artificial Intelligence
+
+   - Neurocomputing
+
+   - Neural Networks
 <!-- TODO: replace with an actual bio (education, prior positions, interests). -->
