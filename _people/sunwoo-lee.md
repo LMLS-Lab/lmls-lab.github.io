@@ -77,11 +77,10 @@ His research interests include numerical optimization-based machine learning, fe
 **Research Interests**
 
 <ul class="cv-bullets">
-  <li>System-efficient distributed / federated learning on heterogeneous edge devices</li>
-  <li>Accelerating numerical optimization process for faster and scalable deep learning</li>
-  <li>Agent training for cooperative inference and scalable multi-agent systems</li>
-  <li>Efficient Sharpness-aware Minimization (SAM) for improving generalization</li>
-  <li>Applied machine learning / deep learning for physics</li>
+  <li>System-efficient Machine Learning / Deep Learning</li>
+  <li>Distributed / Federated Learning</li>
+  <li>Deep Learning Theory</li>
+  <li>Applied Machine Learning / Deep Learning for Physics</li>
 </ul>
 
 **Services**
