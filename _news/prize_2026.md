@@ -1,5 +1,5 @@
 ---
-title: "LMLS-Lab's members have won the Grand Prize at Inha AI challenge 2026! Huge congratulations!"
+title: "LMLS-Lab members have won the Grand Prize at Inha AI challenge 2026! Huge congratulations!"
 date: 2026-09-11
 ---
 Seungjun, Hyuntak, Chaewoon, Garam, and Minseong have won the Grand prize at Inha AI challenge 2026. Congratulations!
