@@ -4,7 +4,7 @@
 published: true
 featured: true
 title: "Ghosted Layers: Unconstrained Activation Alignment for Recovering Layer-Pruned LLMs"
-authors: "Daniel Yun, Junhyuk Jo, Sai Praneeth Karimireddy, Sunwoo Lee"
+authors: "Vincent-Daniel Yun, Junhyuk Jo, Sai Praneeth Karimireddy, Sunwoo Lee"
 note: ""
 venue: "NeurIPS"
 year: 2026
