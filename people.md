@@ -46,6 +46,7 @@ permalink: /people/
               <div class="person-card__body">
                 <div class="person-card__name">{{ person.name }}</div>
                 <div class="person-card__role">{{ person.role }}</div>
+                {% if person.graduation_year %}<div class="person-card__role">Class of {{ person.graduation_year }}</div>{% endif %}
               </div>
             </a>
             {% endfor %}
