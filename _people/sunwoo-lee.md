@@ -5,6 +5,7 @@ group: "faculty"                       # faculty | phd | ms | undergrad | alumni
 order: 1                               # lower = shown first within its group
 email: "sunwool@inha.ac.kr"
 google_scholar: "https://scholar.google.co.kr/citations?user=WA9KNNcAAAAJ"                     # TODO: Google Scholar profile URL, optional
+orcid: "https://orcid.org/0000-0001-6334-3068"
 github: ""                             # TODO: GitHub username, optional
 linkedin: "https://www.linkedin.com/in/sunwoo-lee-90a7308a/?locale=en"                           # TODO: LinkedIn URL, optional
 photo: "/assets/images/sunwoo-lee.jpg"                              # TODO: e.g. /assets/images/people/sunwoo-lee.jpg
@@ -85,7 +86,7 @@ His research interests include numerical optimization-based machine learning, fe
 
 **Services**
 
-<div class="cv-subhead">Conference Reviewer</div>
+<div class="cv-subhead">Conference Reviewer / Program Committee</div>
 
 <dl class="cv-grid">
   <dt>2022–2026</dt><dd>NeurIPS</dd>

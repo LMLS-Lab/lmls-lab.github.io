@@ -19,6 +19,7 @@ layout: default
         {% if page.email %}<li><a href="mailto:{{ page.email }}">Email</a></li>{% endif %}
         {% if page.homepage %}<li><a href="{{ page.homepage }}" target="_blank" rel="noopener">Homepage</a></li>{% endif %}
         {% if page.google_scholar %}<li><a href="{{ page.google_scholar }}" target="_blank" rel="noopener">Google Scholar</a></li>{% endif %}
+        {% if person.orcid %}<li><a href="{{ page.orcid }}" target="_blank" rel="noopener">ORCID</a></li>{% endif %}
         {% if page.github %}<li><a href="https://github.com/{{ page.github }}" target="_blank" rel="noopener">GitHub</a></li>{% endif %}
         {% if page.linkedin %}<li><a href="{{ page.linkedin }}" target="_blank" rel="noopener">LinkedIn</a></li>{% endif %}
       </ul>
