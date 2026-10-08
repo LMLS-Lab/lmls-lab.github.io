@@ -6,7 +6,7 @@ order: 1                               # lower = shown first within its group
 email: "sunwool@inha.ac.kr"
 google_scholar: "https://scholar.google.co.kr/citations?user=WA9KNNcAAAAJ"                     # TODO: Google Scholar profile URL, optional
 orcid: "https://orcid.org/0000-0001-6334-3068"
-github: "https://github.com/LMLS-Lab"                             # TODO: GitHub username, optional
+github: "LMLS-Lab"                             # TODO: GitHub username, optional
 linkedin: "https://www.linkedin.com/in/sunwoo-lee-90a7308a/?locale=en"                           # TODO: LinkedIn URL, optional
 photo: "/assets/images/sunwoo-lee.jpg"                              # TODO: e.g. /assets/images/people/sunwoo-lee.jpg
 ---
