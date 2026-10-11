@@ -3,6 +3,7 @@ name: "Sunwoo Lee"
 role: "Associate Professor"        # TODO: confirm exact title, e.g. "Assistant Professor"
 group: "faculty"                       # faculty | phd | ms | undergrad | alumni
 order: 1                               # lower = shown first within its group
+cv: "https://github.com/swblaster/personal/blob/master/CV.pdf"
 email: "sunwool@inha.ac.kr"
 google_scholar: "https://scholar.google.co.kr/citations?user=WA9KNNcAAAAJ"                     # TODO: Google Scholar profile URL, optional
 orcid: "https://orcid.org/0000-0001-6334-3068"
