@@ -534,3 +534,53 @@ img { max-width: 100%; display: block; }
     border-bottom: none;
   }
 }
+
+/* Three-column row: title | authors or agency | venue or role */
+.pub-list__item.pub-list__item--cols {
+  display: grid;
+  grid-template-columns: minmax(0, 1.5fr) minmax(0, 1fr) auto;
+  column-gap: 1.5rem;
+  align-items: baseline;
+}
+
+.pub-list__item--cols .pub-list__sub {
+  font-size: 0.85em;
+  opacity: 0.75;
+  line-height: 1.5;
+}
+
+/* Keep venue / role on a single line, pinned to the right */
+.pub-list__item--cols .pub-list__tag {
+  white-space: nowrap;
+  text-align: right;
+  font-size: 0.85em;
+  font-weight: 600;
+}
+
+.pub-list__role {
+  display: block;
+}
+
+.pub-list__period {
+  display: block;
+  font-weight: 400;
+  opacity: 0.7;
+}
+
+/* Stack columns on narrow screens */
+@media (max-width: 720px) {
+  .pub-list__item.pub-list__item--cols {
+    grid-template-columns: 1fr;
+    row-gap: 0.25rem;
+  }
+  .pub-list__item--cols .pub-list__tag {
+    text-align: left;
+  }
+  .pub-list__role,
+  .pub-list__period {
+    display: inline;
+  }
+  .pub-list__period::before {
+    content: " · ";
+  }
+}
