@@ -588,7 +588,7 @@ img { max-width: 100%; display: block; }
 /* Publications page: body | venue | year */
 .publication-list .publication-list__item {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) 13rem 3.5rem;
+  grid-template-columns: minmax(0, 1fr) 12rem 3.5rem;
   column-gap: 1.5rem;
   align-items: baseline;
 }
@@ -599,13 +599,13 @@ img { max-width: 100%; display: block; }
   overflow-wrap: anywhere;
   line-height: 1.4;
   text-align: left;
-  font-size: 0.9rem;
+  font-size: 0.95rem;
 }
 
 .publication-list__item > .publication-list__year {
   white-space: nowrap;
   text-align: right;
-  font-size: 0.9rem;
+  font-size: 0.95rem;
 }
 
 /* Stack on narrow screens: venue and year go below the authors */
