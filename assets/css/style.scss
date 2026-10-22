@@ -584,3 +584,37 @@ img { max-width: 100%; display: block; }
     content: " · ";
   }
 }
+
+/* Publications page: body | venue | year */
+.publication-list .publication-list__item {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 9rem 3.5rem;
+  column-gap: 1.5rem;
+  align-items: baseline;
+}
+
+/* Fixed-width columns keep venue and year aligned across rows */
+.publication-list__item > .publication-list__venue {
+  white-space: nowrap;
+  text-align: left;
+}
+
+.publication-list__item > .publication-list__year {
+  white-space: nowrap;
+  text-align: right;
+}
+
+/* Stack on narrow screens: venue and year go below the authors */
+@media (max-width: 720px) {
+  .publication-list .publication-list__item {
+    grid-template-columns: auto 1fr;
+    row-gap: 0.25rem;
+    column-gap: 0.75rem;
+  }
+  .publication-list__item > .publication-list__body {
+    grid-column: 1 / -1;
+  }
+  .publication-list__item > .publication-list__year {
+    text-align: left;
+  }
+}

@@ -31,8 +31,9 @@ permalink: /publications/
                 <span class="publication-list__title">
                   <a href="{{ pub.url | relative_url }}">{{ pub.title }}</a>{% if pub.note %} <span class="pub-note">{{ pub.note }}</span>{% endif %}
                 </span>
-                <span class="publication-list__meta">{{ authors_html }} — <strong class="publication-list__venue">{{ pub.venue }}</strong></span>
+                <span class="publication-list__meta">{{ authors_html }}</span>
               </div>
+              <strong class="publication-list__venue">{{ pub.venue }}</strong>
               <span class="publication-list__year">{{ pub.year }}</span>
             </li>
             {% endfor %}
