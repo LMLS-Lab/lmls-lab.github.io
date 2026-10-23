@@ -665,3 +665,75 @@ img { max-width: 100%; display: block; }
     gap: 0.75rem;
   }
 }
+
+/* Home: numbered research themes under "Our Mission" */
+.themes {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.25rem;
+  margin: 2rem 0 0;
+  padding: 0;
+}
+
+.themes__item {
+  position: relative;
+  padding: 1.5rem 1.4rem 1.6rem;
+  background: var(--color-bg-card);
+  border: 1px solid var(--color-line);
+  border-radius: var(--radius);
+  transition: border-color 0.2s ease, transform 0.2s ease;
+}
+.themes__item:hover {
+  border-color: var(--color-brand);
+  transform: translateY(-2px);
+}
+
+/* Number in the top-right corner, set in a monospace face */
+.themes__num {
+  position: absolute;
+  top: 1.25rem;
+  right: 1.35rem;
+  font-family: var(--font-mono);
+  font-size: 1.3rem;
+  font-weight: 500;
+  line-height: 1;
+  letter-spacing: 0.02em;
+  color: var(--color-brand-dark);
+  opacity: 0.7;
+}
+
+.themes__title {
+  position: relative;
+  margin: 0 0 0.6rem;
+  padding-top: 0.9rem;
+  padding-right: 2.75rem;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--color-ink);
+}
+/* Short accent bar above each title */
+.themes__title::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 2rem;
+  height: 3px;
+  border-radius: 2px;
+  background: var(--color-brand);
+}
+
+.themes__desc {
+  margin: 0;
+  font-size: 0.93rem;
+  line-height: 1.6;
+  color: var(--color-ink-soft);
+}
+
+/* One card per row on narrow screens */
+@media (max-width: 800px) {
+  .themes {
+    grid-template-columns: 1fr;
+  }
+}

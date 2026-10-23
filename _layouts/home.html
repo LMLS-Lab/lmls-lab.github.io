@@ -21,6 +21,18 @@ layout: default
     <div class="prose">
       {{ content }}
     </div>
+
+    {% if page.research_themes and page.research_themes.size > 0 %}
+    <ol class="themes">
+      {% for theme in page.research_themes %}
+      <li class="themes__item">
+        <span class="themes__num">{% if forloop.index < 10 %}0{% endif %}{{ forloop.index }}</span>
+        <h3 class="themes__title">{{ theme.title }}</h3>
+        <p class="themes__desc">{{ theme.description }}</p>
+      </li>
+      {% endfor %}
+    </ol>
+    {% endif %}
   </div>
 </section>
 

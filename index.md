@@ -1,8 +1,15 @@
 ---
 layout: home
 title: Home
----
-We study numerical optimization algorithms and systems for training machine learning models at scale across many heterogeneous machines and devices. Our work spans three connected threads: 1) **distributed/federated learning**, where we build optimizers that effectively utilize distributed data; 2) **system-efficient deep learning**, where we develop compute-, communication-, and memory-efficient learning methods that bridge the gap between theory and practice; 3) **applied machine learning**, where we study practical use-cases of various machine learning algorithms for scientific applications such as Physics.
 
-We are always interested in hearing from self-motivated students and collaborators — see the
-[People](/people/) and [Contact](/contact/) pages for more.
+# Research themes shown under "Our Mission" (numbered 01, 02, 03 ... in order).
+# Add, remove, or reorder entries freely. Each needs a title and a short description.
+research_themes:
+  - title: "Distributed / Federated Learning"
+    description: "Optimizers that effectively utilize data distributed across many heterogeneous machines and devices."
+  - title: "System-Efficient Deep Learning"
+    description: "Compute-, communication-, and memory-efficient learning methods that bridge the gap between theory and practice."
+  - title: "Applied Machine Learning"
+    description: "Practical use-cases of machine learning algorithms for scientific applications such as Physics."
+---
+We study optimization methods for system-efficient machine learning and deep learning.
