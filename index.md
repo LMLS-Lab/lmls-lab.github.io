@@ -3,7 +3,7 @@ layout: home
 title: Home
 
 # One-line mission shown under the lab name at the top of the home page.
-tagline: "We study and develop optimization methods for system-efficient machine learning and deep learning."
+tagline: "LMLS Lab is a research group in Computer Science and Engineering department at Inha University, South Korea.  We study and develop optimization methods for system-efficient machine learning and deep learning."
 
 # Research themes shown as numbered cards (01, 02, 03 ...) right below the top banner.
 # Add, remove, or reorder entries freely. Each needs a title and a short description.
