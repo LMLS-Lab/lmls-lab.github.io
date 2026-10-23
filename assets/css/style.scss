@@ -245,6 +245,8 @@ img { max-width: 100%; display: block; }
 .section { padding: 56px 0; }
 /* Tighten the gap between the hero buttons and the first section */
 .hero + .section { padding-top: 8px; }
+/* Two plain sections in a row would stack 56px + 56px; drop the second one's top padding */
+.section:not(.section--muted) + .section:not(.section--muted) { padding-top: 0; }
 .section--muted { background: var(--color-bg-muted); }
 
 .section__head {
