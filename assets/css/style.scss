@@ -232,6 +232,8 @@ img { max-width: 100%; display: block; }
 /* ---------------- Sections ---------------- */
 
 .section { padding: 56px 0; }
+/* Tighten the gap between the hero buttons and the first section */
+.hero + .section { padding-top: 8px; }
 .section--muted { background: var(--color-bg-muted); }
 
 .section__head {
