@@ -22,11 +22,8 @@ permalink: /contact/
 
       <div class="prose">
         <h2>Prospective Students</h2>
-        <p>We welcome inquiries from self-motivated students interested in distributed learning,
-        federated learning, and deep learning theory. If you'd like to reach out,
-        please email us with a brief note about your background and interests, and include your
-        CV/resume.</p><br>
-        <p>우리 연구실은 분산학습, 연합학습, 딥러닝 이론, 시스템-효율적 딥러닝 연구에 관심있는 학생들에게 언제나 열려 있습니다. 스스로 동기부여가 가능한 열정적인 학생들은 CV와 함께 이메일 주기 바랍니다. </p>
+        <p>We currently do not have an open position for international students. All inquiries will not be replied until we have any open positions. Good luck to your career path.</p><br>
+        <p>우리 연구실은 딥러닝 이론, 분산/연합학습, 신경망 경량화를 연구합니다. 딥러닝을 깊이있게 연구하고자 하는 학생들에게 언제든지 열려있습니다. 이메일로 문의 바랍니다.</p>
 
         <!-- TODO: add admissions-cycle-specific notes, application links, or a map/directions here. -->
       </div>
