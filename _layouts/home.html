@@ -1,28 +1,28 @@
 ---
 layout: default
 ---
+{%- comment -%}
+  Home page order: hero (name + one-line mission) -> research themes -> selected publications -> latest news.
+  Hero text and the themes come from index.md front matter (tagline, research_themes).
+{%- endcomment -%}
 <section class="hero">
   <div class="wrap">
     <p class="hero__eyebrow">{{ site.department }} · {{ site.university }}</p>
     <h1>{{ site.title }}</h1>
-    <p class="hero__lede">{{ site.description }}</p>
+    <p class="hero__lede">{{ page.tagline | default: site.description }}</p>
     <div class="hero__actions">
-      <a class="btn btn--primary" href="{{ '/publications/' | relative_url }}">Our Research</a>
-      <a class="btn btn--ghost" href="{{ '/people/' | relative_url }}">Join the Lab</a>
+      <a class="btn btn--primary" href="{{ '/publications/' | relative_url }}">Publications</a>
+      <a class="btn btn--ghost" href="{{ '/contact/' | relative_url }}">Join the Lab</a>
     </div>
   </div>
 </section>
 
-<section class="section">
+{% if page.research_themes and page.research_themes.size > 0 %}
+<section class="section" id="research">
   <div class="wrap">
     <div class="section__head">
-      <h2>Our Mission</h2>
+      <h2>Research</h2>
     </div>
-    <div class="prose">
-      {{ content }}
-    </div>
-
-    {% if page.research_themes and page.research_themes.size > 0 %}
     <ol class="themes">
       {% for theme in page.research_themes %}
       <li class="themes__item">
@@ -32,54 +32,9 @@ layout: default
       </li>
       {% endfor %}
     </ol>
-    {% endif %}
   </div>
 </section>
-
-<!--
-<section class="section section--muted">
-  <div class="wrap">
-    <div class="section__head">
-      <h2>Research Focus</h2>
-      <a class="section__more" href="{{ '/research/' | relative_url }}">All research areas →</a>
-    </div>
-    <div class="grid grid--3">
-      <div class="focus-card">
-        <h3>Distributed Learning</h3>
-        <p>Training algorithms and systems that scale machine learning across many workers, devices, and data centers.</p>
-      </div>
-      <div class="focus-card">
-        <h3>Federated Learning</h3>
-        <p>Collaborative learning across decentralized data with an emphasis on communication efficiency, privacy, and robustness.</p>
-      </div>
-      <div class="focus-card">
-        <h3>Optimization-based ML</h3>
-        <p>Optimization theory and algorithm design for large-scale, non-convex, and distributed machine learning problems.</p>
-      </div>
-    </div>
-  </div>
-</section>
--->
-
-<section class="section">
-  <div class="wrap">
-    <div class="section__head">
-      <h2>Latest News</h2>
-      <a class="section__more" href="{{ '/news/' | relative_url }}">All news →</a>
-    </div>
-    <ul class="news-list">
-      {% assign recent_news = site.news | sort: 'date' | reverse | slice: 0, 5 %}
-      {% for item in recent_news %}
-      <li class="news-list__item">
-        <time datetime="{{ item.date | date_to_xmlschema }}">{{ item.date | date: "%b %-d, %Y" }}</time>
-        <span>{{ item.title }}</span>
-      </li>
-      {% else %}
-      <li class="news-list__item news-list__item--empty">No news yet — check back soon.</li>
-      {% endfor %}
-    </ul>
-  </div>
-</section>
+{% endif %}
 
 <section class="section section--muted">
   <div class="wrap">
@@ -110,28 +65,19 @@ layout: default
 <section class="section">
   <div class="wrap">
     <div class="section__head">
-      <h2>On-going Projects</h2>
+      <h2>Latest News</h2>
+      <a class="section__more" href="{{ '/news/' | relative_url }}">All news →</a>
     </div>
-    <ul class="pub-list">
-      {% assign today = 'now' | date: '%Y-%m' %}
-      {% assign all_projects = site.projects | sort: 'start' | reverse %}
-      {% assign has_ongoing = false %}
-      {% for proj in all_projects %}
-        {% if proj.end == nil or proj.end == '' or proj.end >= today %}
-          {% assign has_ongoing = true %}
-          <li class="pub-list__item pub-list__item--cols">
-            <span class="pub-list__title">{{ proj.title }}</span>
-            <span class="pub-list__sub">{{ proj.agency }}</span>
-            <span class="pub-list__tag">
-              <span class="pub-list__role">{{ proj.role }}</span>
-              <span class="pub-list__period">{{ proj.start }}–{% if proj.end %}{{ proj.end }}{% else %}Present{% endif %}</span>
-            </span>
-          </li>
-        {% endif %}
+    <ul class="news-list">
+      {% assign recent_news = site.news | sort: 'date' | reverse | slice: 0, 4 %}
+      {% for item in recent_news %}
+      <li class="news-list__item">
+        <time datetime="{{ item.date | date_to_xmlschema }}">{{ item.date | date: "%b %-d, %Y" }}</time>
+        <span>{{ item.title }}</span>
+      </li>
+      {% else %}
+      <li class="news-list__item news-list__item--empty">No news yet — check back soon.</li>
       {% endfor %}
-      {% unless has_ongoing %}
-      <li class="pub-list__item pub-list__item--empty">No ongoing projects listed yet.</li>
-      {% endunless %}
     </ul>
   </div>
 </section>
