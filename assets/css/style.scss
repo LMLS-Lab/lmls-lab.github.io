@@ -585,40 +585,83 @@ img { max-width: 100%; display: block; }
   }
 }
 
-/* Publications page: body | venue | year */
-.publication-list .publication-list__item {
+/* Publications page: year column | boxes grouped by type */
+.pubs { margin-top: 1rem; }
+
+.pubs__year {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) 10rem 3.5rem;
-  column-gap: 1.5rem;
-  align-items: baseline;
+  grid-template-columns: 6rem minmax(0, 1fr);
+  gap: 1.5rem;
+  margin-bottom: 2.5rem;
 }
 
-/* Venue wraps inside its own column instead of spilling into the year */
-.publication-list__item > .publication-list__venue {
-  white-space: normal;
-  overflow-wrap: anywhere;
+.pubs__year-label {
+  margin: 0;
+  padding-top: 0.35rem;
+  font-size: 1.5rem;
+  color: var(--color-ink);
+}
+
+.pubs__group {
+  border-left: 2px solid var(--color-line);
+  margin-bottom: 1.25rem;
+}
+
+.pubs__group-title {
+  margin: 0;
+  padding: 0.6rem 1rem;
+  background: var(--color-bg-muted);
+  border-top: 1px solid var(--color-line);
+  font-size: 0.9rem;
+  font-weight: 600;
+  letter-spacing: 0;
+}
+
+.pubs__list {
+  list-style: none;
+  margin: 0;
+  padding: 0 1rem;
+}
+
+.pub {
+  padding: 1rem 0;
+  border-top: 1px solid var(--color-line);
+}
+.pub:first-child { border-top: 0; }
+
+.pub__title {
+  margin: 0 0 0.35rem;
+  font-size: 1.05rem;
+  font-weight: 600;
   line-height: 1.4;
-  text-align: left;
-  font-size: 0.95rem;
+}
+.pub__title a { color: var(--color-ink); }
+
+.pub__authors,
+.pub__venue {
+  margin: 0;
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+.pub__authors { color: var(--color-ink-soft); }
+.pub__authors strong { color: var(--color-ink); font-weight: 600; }
+.pub__venue { color: var(--color-year); }
+
+.pub__links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem 1rem;
+  list-style: none;
+  margin: 0.6rem 0 0;
+  padding: 0;
+  font-size: 0.85rem;
+  font-weight: 600;
 }
 
-.publication-list__item > .publication-list__year {
-  white-space: nowrap;
-  text-align: right;
-  font-size: 0.95rem;
-}
-
-/* Stack on narrow screens: venue and year go below the authors */
-@media (max-width: 720px) {
-  .publication-list .publication-list__item {
-    grid-template-columns: auto 1fr;
-    row-gap: 0.25rem;
-    column-gap: 0.75rem;
-  }
-  .publication-list__item > .publication-list__body {
-    grid-column: 1 / -1;
-  }
-  .publication-list__item > .publication-list__year {
-    text-align: left;
+/* Stack the year above its boxes on narrow screens */
+@media (max-width: 700px) {
+  .pubs__year {
+    grid-template-columns: 1fr;
+    gap: 0.75rem;
   }
 }
