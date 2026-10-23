@@ -131,6 +131,13 @@ img { max-width: 100%; display: block; }
   letter-spacing: 0.02em;
 }
 
+/* Image logo in the header (replaces the old text mark) */
+.site-header__logo {
+  width: 34px;
+  height: 34px;
+  flex-shrink: 0;
+}
+
 .site-header__name {
   font-size: 1rem;
 }
