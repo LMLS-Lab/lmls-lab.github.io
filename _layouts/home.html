@@ -36,6 +36,26 @@ layout: default
 </section>
 {% endif %}
 
+<section class="section">
+  <div class="wrap">
+    <div class="section__head">
+      <h2>Latest News</h2>
+      <a class="section__more" href="{{ '/news/' | relative_url }}">All news →</a>
+    </div>
+    <ul class="news-list">
+      {% assign recent_news = site.news | sort: 'date' | reverse | slice: 0, 4 %}
+      {% for item in recent_news %}
+      <li class="news-list__item">
+        <time datetime="{{ item.date | date_to_xmlschema }}">{{ item.date | date: "%b %-d, %Y" }}</time>
+        <span>{{ item.title }}</span>
+      </li>
+      {% else %}
+      <li class="news-list__item news-list__item--empty">No news yet — check back soon.</li>
+      {% endfor %}
+    </ul>
+  </div>
+</section>
+
 <section class="section section--muted">
   <div class="wrap">
     <div class="section__head">
@@ -57,26 +77,6 @@ layout: default
       </li>
       {% else %}
       <li class="pub-list__item pub-list__item--empty">No publications listed yet.</li>
-      {% endfor %}
-    </ul>
-  </div>
-</section>
-
-<section class="section">
-  <div class="wrap">
-    <div class="section__head">
-      <h2>Latest News</h2>
-      <a class="section__more" href="{{ '/news/' | relative_url }}">All news →</a>
-    </div>
-    <ul class="news-list">
-      {% assign recent_news = site.news | sort: 'date' | reverse | slice: 0, 4 %}
-      {% for item in recent_news %}
-      <li class="news-list__item">
-        <time datetime="{{ item.date | date_to_xmlschema }}">{{ item.date | date: "%b %-d, %Y" }}</time>
-        <span>{{ item.title }}</span>
-      </li>
-      {% else %}
-      <li class="news-list__item news-list__item--empty">No news yet — check back soon.</li>
       {% endfor %}
     </ul>
   </div>
