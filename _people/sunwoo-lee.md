@@ -97,7 +97,8 @@ His research interests include numerical optimization-based machine learning, fe
   <dt>2021–2022</dt><dd>AISTATS</dd>
   <dt>2023–2026</dt><dd>KDD (Outstanding Reviewer, KDD 2024)</dd>
   <dt>2025–2026</dt><dd>CVPR</dd>
-  <dt>2026</dt><dd>ARR (ACL, EMNLP)</dd>
+  <dt>2026-2027</dt><dd>ARR (ACL, EMNLP)</dd>
+  <dt>2027</dt><dd>IJCAI</dd>
 </dl>
 
 <div class="cv-subhead">Journal Reviewer</div>
