@@ -582,12 +582,25 @@ img { max-width: 100%; display: block; }
   }
 }
 
-/* Three-column row: title | authors or agency | venue or role */
-.pub-list__item.pub-list__item--cols {
+/* Three-column table: title | authors or agency | venue or role.
+   The list owns the column tracks, and each row adopts them via subgrid,
+   so column edges are shared across all rows like a table. */
+.pub-list.pub-list--cols {
   display: grid;
   grid-template-columns: minmax(0, 1.5fr) minmax(0, 1fr) auto;
   column-gap: 1.5rem;
+}
+
+.pub-list__item.pub-list__item--cols {
+  display: grid;
+  grid-column: 1 / -1;
+  grid-template-columns: subgrid;
   align-items: baseline;
+}
+
+/* Empty-state row spans the full width */
+.pub-list--cols > .pub-list__item--empty {
+  grid-column: 1 / -1;
 }
 
 .pub-list__item--cols .pub-list__sub {
@@ -616,6 +629,9 @@ img { max-width: 100%; display: block; }
 
 /* Stack columns on narrow screens */
 @media (max-width: 720px) {
+  .pub-list.pub-list--cols {
+    display: block;
+  }
   .pub-list__item.pub-list__item--cols {
     grid-template-columns: 1fr;
     row-gap: 0.25rem;
