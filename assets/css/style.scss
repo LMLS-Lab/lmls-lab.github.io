@@ -217,8 +217,9 @@ img { max-width: 100%; display: block; }
   margin-bottom: 0.75em;
 }
 
+/* Let the tagline span the full content width (same as the title) */
 .hero__lede {
-  max-width: 640px;
+  max-width: none;
   font-size: 1.15rem;
   color: var(--color-ink-soft);
 }
