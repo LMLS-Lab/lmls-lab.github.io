@@ -14,7 +14,7 @@ group_photo_folder: /assets/images/group/
     <div class="contact-grid">
       <div class="prose">
         <h2>Address</h2>
-        <p>{{ site.address }}</p>
+        <p>{{ site.address | newline_to_br }}</p>
         <p>
           <a href="mailto:{{ site.email }}">{{ site.email }}</a>
         </p>
