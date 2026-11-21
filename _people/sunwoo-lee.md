@@ -58,29 +58,29 @@ His research focuses on optimization, federated learning, system-efficient deep 
 
 <dl class="cv-grid">
   <dt>2015–2020</dt>
-  <dd>Ph.D. in Computer Engineering, <strong>Northwestern University</strong>, USA</dd>
+  <dd>Ph.D. in Computer Engineering, <strong>Northwestern University</strong>, Evanston, IL, USA</dd>
   <dt>2003–2009</dt>
-  <dd>B.S. and M.S. in Computer Engineering, <strong>Hanyang University</strong>, South Korea</dd>
+  <dd>B.S. and M.S. in Computer Engineering, <strong>Hanyang University</strong>, Seoul, South Korea</dd>
 </dl>
 
 **Experience**
 
 <dl class="cv-grid">
   <dt>2020–2022</dt>
-  <dd>Postdoctoral Researcher, <strong>University of Southern California</strong>, USA</dd>
+  <dd>Postdoctoral Researcher, <strong>University of Southern California</strong>, Los Angeles, CA, USA</dd>
   <dt>2013–2015</dt>
-  <dd>System Software Researcher, Memory Solutions Lab, <strong>Samsung Electronics</strong>, South Korea</dd>
+  <dd>System Software Researcher, <strong>Samsung Electronics</strong>, Hwaseong, South Korea</dd>
   <dt>2009–2013</dt>
-  <dd>System Software Engineer (Alternative Military Service), <strong>HUMAX</strong>, South Korea</dd>
+  <dd>Software Engineer (Alternative Military Service), <strong>HUMAX</strong>, Seongnam, South Korea</dd>
 </dl>
 
 **Research Interests**
 
 <ul class="cv-bullets">
-  <li>System-efficient Machine Learning / Deep Learning</li>
-  <li>Distributed / Federated Learning</li>
-  <li>Deep Learning Theory</li>
-  <li>Applied Machine Learning / Deep Learning for Physics</li>
+  <li>Distributed Optimization</li>
+  <li>Federated Learning</li>
+  <li>System-Efficient Deep Learning</li>
+  <li>Applied Machine Learning (AI + Physics)</li>
 </ul>
 
 **Services**
