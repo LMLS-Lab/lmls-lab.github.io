@@ -30,6 +30,8 @@ nav_links:
     url: "/"
   - title: "People"
     url: "/people/"
+  - title: "Research"
+    url: "/research/"
   - title: "Publications"
     url: "/publications/"
   - title: "News"

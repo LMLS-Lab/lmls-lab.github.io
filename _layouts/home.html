@@ -12,27 +12,11 @@ layout: default
     <h1>{{ site.title }}</h1>
     <p class="hero__lede">{{ page.tagline | default: site.description }}</p>
     <div class="hero__actions">
-      <a class="btn btn--primary" href="{{ '/publications/' | relative_url }}">Our Research</a>
+      <a class="btn btn--primary" href="{{ '/research/' | relative_url }}">Our Research</a>
       <a class="btn btn--ghost" href="{{ '/contact/' | relative_url }}">Join the Lab</a>
     </div>
   </div>
 </section>
-
-{% if page.research_themes and page.research_themes.size > 0 %}
-<section class="section" id="research">
-  <div class="wrap">
-    <ol class="themes">
-      {% for theme in page.research_themes %}
-      <li class="themes__item">
-        <span class="themes__num">{% if forloop.index < 10 %}0{% endif %}{{ forloop.index }}</span>
-        <h3 class="themes__title">{{ theme.title }}</h3>
-        <p class="themes__desc">{{ theme.description }}</p>
-      </li>
-      {% endfor %}
-    </ol>
-  </div>
-</section>
-{% endif %}
 
 <section class="section">
   <div class="wrap">
