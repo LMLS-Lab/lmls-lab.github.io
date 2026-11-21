@@ -16,40 +16,64 @@ permalink: /research/
       efficient deep learning, and scientific applications.
     </p>
 
-    <ol class="themes">
-      <li class="themes__item">
-        <span class="themes__num">01</span>
-        <h3 class="themes__title">
-          Distributed / Federated Learning
-        </h3>
-        <p class="themes__desc">
-          Scalable distributed optimization on
-          large-scale systems.
-        </p>
-      </li>
+    <div class="research-list">
 
-      <li class="themes__item">
-        <span class="themes__num">02</span>
-        <h3 class="themes__title">
-          System-Efficient Deep Learning
-        </h3>
-        <p class="themes__desc">
-          Compute-, communication-, and memory-efficient
-          learning methods that bridge the gap between
-          theory and practice.
-        </p>
-      </li>
+      <article class="research-card">
+        <div class="research-card__content">
+          <span class="research-card__num">01</span>
+          <h2>Distributed / Federated Learning</h2>
+          <p>
+            Scalable distributed optimization on
+            large-scale systems.
+          </p>
+        </div>
+        <div class="research-card__image">
+          <img
+            src="{{ '/assets/images/research/distributed.png' | relative_url }}"
+            alt="Distributed and federated learning"
+            loading="lazy"
+          >
+        </div>
+      </article>
 
-      <li class="themes__item">
-        <span class="themes__num">03</span>
-        <h3 class="themes__title">
-          Applied Machine Learning
-        </h3>
-        <p class="themes__desc">
-          Scientific machine learning applications
-          (Physics + AI).
-        </p>
-      </li>
-    </ol>
+      <article class="research-card">
+        <div class="research-card__content">
+          <span class="research-card__num">02</span>
+          <h2>System-Efficient Deep Learning</h2>
+          <p>
+            Compute-, communication-, and memory-efficient
+            learning methods that bridge the gap
+            between theory and practice.
+          </p>
+        </div>
+        <div class="research-card__image">
+          <img
+            src="{{ '/assets/images/research/efficient.png' | relative_url }}"
+            alt="System-efficient deep learning"
+            loading="lazy"
+          >
+        </div>
+      </article>
+
+      <article class="research-card">
+        <div class="research-card__content">
+          <span class="research-card__num">03</span>
+          <h2>Applied Machine Learning</h2>
+          <p>
+            Scientific machine learning applications
+            (Physics + AI).
+          </p>
+        </div>
+        <div class="research-card__image">
+          <img
+            src="{{ '/assets/images/research/applied.png' | relative_url }}"
+            alt="Applied machine learning"
+            loading="lazy"
+          >
+        </div>
+      </article>
+
+    </div>
+
   </div>
 </section>
