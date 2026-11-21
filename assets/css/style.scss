@@ -880,3 +880,42 @@ img { max-width: 100%; display: block; }
     height: 200px;
   }
 }
+
+.contact-photos {
+  margin-top: 64px;
+}
+
+.contact-photos h2 {
+  font-size: 28px;
+  margin: 0 0 20px;
+}
+
+.contact-photos h2 small {
+  font-size: 15px;
+  font-weight: 400;
+  color: #aab2c2;
+  margin-left: 8px;
+}
+
+.contact-photos .group-photo {
+  margin: 0;
+  width: 100%;
+}
+
+.contact-photos .group-photo img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+@media (max-width: 700px) {
+  .contact-photos {
+    margin-top: 40px;
+  }
+
+  .contact-photos h2 small {
+    display: block;
+    margin: 6px 0 0;
+  }
+}

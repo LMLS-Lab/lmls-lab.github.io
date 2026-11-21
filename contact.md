@@ -38,30 +38,34 @@ group_photo_folder: /assets/images/group/
   
   {% assign photos = photo_list | split: "|" %}
   
-  {% if photos.size > 0 %}
-  <div class="prose">
-    <h2>Photos (Random moments from LMLS-Lab!) </h2>
-  </div>
   <div class="wrap">
-    <figure class="group-photo">
-      <img id="group-photo"
-           alt="LMLS Lab members"
-           data-photos="{{ photo_list }}">
-      <noscript>
-        <img src="{{ photos[0] }}" alt="LMLS Lab members">
-      </noscript>
-    </figure>
+    <section class="contact-photos">
+      <h2>
+        Photos
+        <small>(Random moments from LMLS Lab!)</small>
+      </h2>
+  
+      {% if photos.size > 0 %}
+      <figure class="group-photo">
+        <img id="group-photo"
+             alt="LMLS Lab members"
+             data-photos="{{ photo_list }}">
+        <noscript>
+          <img src="{{ photos[0] }}" alt="LMLS Lab members">
+        </noscript>
+      </figure>
+  
+      <script>
+        (function () {
+          var img = document.getElementById("group-photo");
+          var list = img.getAttribute("data-photos")
+                        .split("|")
+                        .filter(Boolean);
+          img.src = list[Math.floor(Math.random() * list.length)];
+        })();
+      </script>
+      {% endif %}
+  
+    </section>
   </div>
-  
-  <script>
-    (function () {
-      var img = document.getElementById("group-photo");
-      var list = img.getAttribute("data-photos")
-                    .split("|")
-                    .filter(Boolean);
-  
-      img.src = list[Math.floor(Math.random() * list.length)];
-    })();
-  </script>
-  {% endif %}
 </section>
