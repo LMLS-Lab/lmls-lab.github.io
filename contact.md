@@ -39,14 +39,16 @@ group_photo_folder: /assets/images/group/
   {% assign photos = photo_list | split: "|" %}
   
   {% if photos.size > 0 %}
-  <figure class="group-photo">
-    <img id="group-photo"
-         alt="LMLS Lab members"
-         data-photos="{{ photo_list }}">
-    <noscript>
-      <img src="{{ photos[0] }}" alt="LMLS Lab members">
-    </noscript>
-  </figure>
+  <div class="wrap">
+    <figure class="group-photo">
+      <img id="group-photo"
+           alt="LMLS Lab members"
+           data-photos="{{ photo_list }}">
+      <noscript>
+        <img src="{{ photos[0] }}" alt="LMLS Lab members">
+      </noscript>
+    </figure>
+  </div>
   
   <script>
     (function () {
