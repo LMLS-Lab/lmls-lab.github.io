@@ -815,8 +815,8 @@ img { max-width: 100%; display: block; }
 
 .research-card {
   display: grid;
-  grid-template-columns: 1fr 40%;
-  min-height: 230px;
+  grid-template-columns: 40% 60%;
+  min-height: 260px;
   overflow: hidden;
   background: #181c26;
   border: 1px solid #2b3241;
@@ -860,17 +860,11 @@ img { max-width: 100%; display: block; }
   object-fit: cover;
 }
 
-/* Mobile layout */
 
+/* 모바일 화면 */
 @media (max-width: 700px) {
   .research-card {
-    display: grid;
-    grid-template-columns: 40% 60%;
-    min-height: 230px;
-    overflow: hidden;
-    background: #181c26;
-    border: 1px solid #2b3241;
-    border-radius: 12px;
+    grid-template-columns: 1fr;
   }
 
   .research-card__content {
@@ -881,4 +875,3 @@ img { max-width: 100%; display: block; }
     height: 200px;
   }
 }
-

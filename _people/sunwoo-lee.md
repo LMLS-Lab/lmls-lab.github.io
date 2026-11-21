@@ -90,15 +90,15 @@ His research interests include numerical optimization-based machine learning, fe
 <div class="cv-subhead">Conference Reviewer / Program Committee</div>
 
 <dl class="cv-grid">
-  <dt>2022–2026</dt><dd>NeurIPS</dd>
+  <dt>2022–2026</dt><dd>NeurIPS (Top Reviewer, 2026)</dd>
   <dt>2024–2027</dt><dd>ICLR</dd>
   <dt>2022–2026</dt><dd>ICML</dd>
   <dt>2022–2027</dt><dd>AAAI</dd>
-  <dt>2021–2022</dt><dd>AISTATS</dd>
-  <dt>2023–2026</dt><dd>KDD (Outstanding Reviewer, KDD 2024)</dd>
+  <dt>2023–2026</dt><dd>KDD (Outstanding Reviewer, 2024)</dd>
   <dt>2025–2026</dt><dd>CVPR</dd>
   <dt>2026-2027</dt><dd>ARR (ACL, EMNLP)</dd>
   <dt>2027</dt><dd>IJCAI</dd>
+  <dt>2021–2022</dt><dd>AISTATS</dd>
 </dl>
 
 <div class="cv-subhead">Journal Reviewer</div>
