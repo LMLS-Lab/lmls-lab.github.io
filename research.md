@@ -61,7 +61,7 @@ permalink: /research/
           <h2>Applied Machine Learning</h2>
           <p>
             Scientific machine learning applications
-            (Physics + AI).
+            (AI + Physics).
           </p>
         </div>
         <div class="research-card__image">
