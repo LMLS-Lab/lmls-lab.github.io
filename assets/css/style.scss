@@ -526,12 +526,9 @@ img { max-width: 100%; display: block; }
   align-items: start;
 }
 
-/* Align headings at the top of both columns */
-.contact-grid > * > h2:first-child,
-.contact-grid > * > .prose > h2:first-child,
-.contact-grid > .prose > h2:first-child {
+/* Remove heading top margins in both columns */
+.contact-grid h2 {
   margin-top: 0;
-  padding-top: 0;
 }
 
 /* Mobile layout */
