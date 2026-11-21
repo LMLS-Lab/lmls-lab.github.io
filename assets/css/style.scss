@@ -882,12 +882,12 @@ img { max-width: 100%; display: block; }
 }
 
 .contact-photos {
-  margin-top: 64px;
+  margin-top: 24px;
 }
 
 .contact-photos h2 {
   font-size: 28px;
-  margin: 0 0 20px;
+  margin: 0 0 12px;
 }
 
 .contact-photos h2 small {
@@ -911,7 +911,7 @@ img { max-width: 100%; display: block; }
 
 @media (max-width: 700px) {
   .contact-photos {
-    margin-top: 40px;
+    margin-top: 20px;
   }
 
   .contact-photos h2 small {
