@@ -62,29 +62,5 @@ group_photo_folder: "/assets/images/group/"
     {% else %}
       <p class="prose">No members listed yet.</p>
     {% endif %}
-
-    <div class="prose">
-      <h2>Join the Lab</h2>
-      <p>We're always happy to hear from motivated prospective students. See the
-      <a href="/contact/">Contact</a> page for how to reach us.</p>
-    </div>
-
-    {% comment %} Collect every image in the photo folder into a "|"-separated list. {% endcomment %}
-    {% capture photo_list %}{% for f in site.static_files %}{% if page.group_photo_folder and f.path contains page.group_photo_folder %}{% assign ext = f.extname | downcase %}{% if ext == ".jpg" or ext == ".jpeg" or ext == ".png" or ext == ".webp" %}{{ f.path | relative_url }}|{% endif %}{% endif %}{% endfor %}{% endcapture %}
-    {% assign photos = photo_list | split: "|" %}
-    {% if photos.size > 0 %}
-    <figure class="group-photo">
-      <img id="group-photo" alt="LMLS Lab members" data-photos="{{ photo_list }}">
-      <noscript><img src="{{ photos[0] }}" alt="LMLS Lab members"></noscript>
-    </figure>
-    <script>
-      // Show one photo from the folder, chosen at random on every page load
-      (function () {
-        var img = document.getElementById("group-photo");
-        var list = img.getAttribute("data-photos").split("|").filter(Boolean);
-        img.src = list[Math.floor(Math.random() * list.length)];
-      })();
-    </script>
-    {% endif %}
   </div>
 </section>

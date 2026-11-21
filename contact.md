@@ -2,6 +2,7 @@
 layout: default
 title: Contact
 permalink: /contact/
+group_photo_folder: /assets/images/group/
 ---
 <section class="section">
   <div class="wrap">
@@ -29,4 +30,33 @@ permalink: /contact/
       </div>
     </div>
   </div>
+
+  {% comment %}
+    Collect all group photos.
+  {% endcomment %}
+  {% capture photo_list %}{% for f in site.static_files %}{% if page.group_photo_folder and f.path contains page.group_photo_folder %}{% assign ext = f.extname | downcase %}{% if ext == ".jpg" or ext == ".jpeg" or ext == ".png" or ext == ".webp" %}{{ f.path | relative_url }}|{% endif %}{% endif %}{% endfor %}{% endcapture %}
+  
+  {% assign photos = photo_list | split: "|" %}
+  
+  {% if photos.size > 0 %}
+  <figure class="group-photo">
+    <img id="group-photo"
+         alt="LMLS Lab members"
+         data-photos="{{ photo_list }}">
+    <noscript>
+      <img src="{{ photos[0] }}" alt="LMLS Lab members">
+    </noscript>
+  </figure>
+  
+  <script>
+    (function () {
+      var img = document.getElementById("group-photo");
+      var list = img.getAttribute("data-photos")
+                    .split("|")
+                    .filter(Boolean);
+  
+      img.src = list[Math.floor(Math.random() * list.length)];
+    })();
+  </script>
+  {% endif %}
 </section>
