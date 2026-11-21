@@ -39,6 +39,9 @@ group_photo_folder: /assets/images/group/
   {% assign photos = photo_list | split: "|" %}
   
   {% if photos.size > 0 %}
+  <div class="prose">
+    <h2>Photos (Random moments from LMLS-Lab!) </h2>
+  </div>
   <div class="wrap">
     <figure class="group-photo">
       <img id="group-photo"
