@@ -23,8 +23,7 @@ permalink: /research/
           <span class="research-card__num">01</span>
           <h2>Distributed / Federated Learning</h2>
           <p>
-            Scalable distributed optimization on
-            large-scale systems.
+            Scalable distributed optimization on large-scale systems with provable performance guarantees.
           </p>
         </div>
         <div class="research-card__image">
