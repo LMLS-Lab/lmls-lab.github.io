@@ -10,7 +10,7 @@ venue: "EMNLP"
 year: 2026
 type: "conference"          # conference | journal | preprint | workshop
 arxiv: "https://arxiv.org/abs/2605.27786"                   # link to arXiv page, optional
-pdf: "https://aclanthology.org/2026.emnlp-main.1979"
+doi: "10.18653/2026.emnlp-main.1979"
 bibtex: |
   @article{yun2026locality,
     title={Locality-Aware Redundancy Pruning for LLM Depth Compression},
