@@ -10,6 +10,7 @@ venue: "NeurIPS"
 year: 2026
 type: "conference"          # conference | journal | preprint | workshop
 arxiv: "https://arxiv.org/abs/2605.15491"                   # link to arXiv page, optional
+pdf: "https://openreview.net/forum?id=QdursVtog1"
 bibtex: |
   @article{yun2026ghosted,
     title={Ghosted Layers: Unconstrained Activation Alignment for Recovering Layer-Pruned LLMs},
