@@ -49,6 +49,7 @@ kramdown:
   syntax_highlighter: rouge
 permalink: pretty
 timezone: Asia/Seoul
+future: true
 
 collections:
   people:
